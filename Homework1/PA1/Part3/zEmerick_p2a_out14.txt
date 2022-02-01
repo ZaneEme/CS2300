@@ -1,1 +1,0 @@
-Error: Multiplication cannot be computed
