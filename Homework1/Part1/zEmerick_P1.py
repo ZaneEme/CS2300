@@ -1,6 +1,6 @@
 # Mat1:
-# Number of Rows = Number of Letters in your first name;
-# Number of Columns = Number of Letters in your last name;
+# Number of Rows = Number of Letters in your first name
+# Number of Columns = Number of Letters in your last name
 #
 # Starting at index position (0,0) begin filling Mat1 with
 # values starting at 1 and increasing by 1 each time as you
@@ -8,7 +8,7 @@
 def Mat1(firstName, lastName):
     array = [[0] * len(lastName)] * len(firstName)
     count = 0
-    with open("zEmerick_P1_Mat1.txt", "w") as file:
+    with open("zEmerick_Mat1.txt", "w") as file:
         for row in array:
             for _ in row:
                 if count < 10:
@@ -20,8 +20,8 @@ def Mat1(firstName, lastName):
 
 
 # Mat2:
-# Number of Rows = Number of Letters in your last name;
-# Number of Columns = Number of Letters in your first name;
+# Number of Rows = Number of Letters in your last name
+# Number of Columns = Number of Letters in your first name
 #
 # Starting at index position (0,0) begin filling Mat2 with
 # values starting at 2 and increasing by 3 each time as you
@@ -30,7 +30,7 @@ def Mat2(firstName, lastName):
     array = [[0 for _ in range(len(firstName))] for _ in range(len(lastName))]
     count = 2
     colIndex = 0
-    with open("zEmerick_P1_Mat2.txt", "w") as file:
+    with open("zEmerick_Mat2.txt", "w") as file:
         while colIndex < len(firstName):
             for row in array:
                 row[colIndex] = count
@@ -46,8 +46,8 @@ def Mat2(firstName, lastName):
 
 
 # Mat3:
-# Number of Rows = Number of Letters in your last name;
-# Number of Columns = Number of Letters in your first name;
+# Number of Rows = Number of Letters in your last name
+# Number of Columns = Number of Letters in your first name
 #
 # Starting at index position (0,0) begin filling Mat3 with
 # values starting at 0.6 and increasing by 0.2 each time as you
@@ -56,7 +56,7 @@ def Mat3(firstName, lastName):
     array = [[0 for _ in range(len(lastName))] for _ in range(len(firstName))]
     count = 0.6
     colIndex = 0
-    with open("zEmerick_P1_Mat3.txt", "w") as file:
+    with open("zEmerick_Mat3.txt", "w") as file:
         while colIndex < len(lastName):
             for row in array:
                 row[colIndex] = round(count, 2)
@@ -78,7 +78,7 @@ def Mat4():
     array = [[0 for _ in range(9)] for _ in range(5)]
     count = 3
     colIndex = 0
-    with open("zEmerick_P1_Mat4.txt", "w") as file:
+    with open("zEmerick_Mat4.txt", "w") as file:
         while colIndex < 9:
             for row in array:
                 row[colIndex] = count
@@ -102,7 +102,7 @@ def Mat4():
 def Mat5():
     array = [[0] * 9] * 5
     count = -7
-    with open("zEmerick_P1_Mat5.txt", "w") as file:
+    with open("zEmerick_Mat5.txt", "w") as file:
         for row in array:
             for _ in row:
                 if count >= 0 and count < 10:

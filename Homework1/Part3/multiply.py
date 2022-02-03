@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # Given two arrays, attempt to multiply them and write the output to a specified file.
 def multiply(arrayOne, arrayTwo, outName):
     file = open(outName, "w")
@@ -11,6 +12,7 @@ def multiply(arrayOne, arrayTwo, outName):
         file.write("Error: Multiplication cannot be computed")
 
     file.close()
+
 
 # If the program is run as a standalone, take two inputs and multiply their corresponding arrays.
 if __name__ == "__main__":
